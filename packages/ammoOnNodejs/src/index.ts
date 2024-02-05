@@ -4,11 +4,13 @@
  * @license      {@link https://github.com/enable3d/enable3d/blob/master/LICENSE|LGPL-3.0}
  */
 
-// export { Ammo } from './ammo'
+//export { Ammo } from './ammo'
 export { Physics } from './physics'
 
 import { FBXLoader, GLTFLoader } from './loaders'
 export const Loaders = { GLTFLoader, FBXLoader }
+
+export { GLTFExporter } from './lib/GLTFExporter'
 
 export { ServerClock } from '@enable3d/common/dist/serverClock'
 

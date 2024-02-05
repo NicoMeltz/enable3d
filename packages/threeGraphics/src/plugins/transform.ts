@@ -90,7 +90,7 @@ export default class Transform {
     this.tmpPlane.updateMatrixWorld(true)
 
     // raycast
-    this.tmpRaycaster.setFromCamera({ x, y }, this.camera)
+    this.tmpRaycaster.setFromCamera(new Vector2( x, y ), this.camera)
 
     // check intersection with plane
     const intersects = this.tmpRaycaster.intersectObjects([this.tmpPlane])

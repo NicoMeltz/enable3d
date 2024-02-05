@@ -1,6 +1,6 @@
 {
   "name": "enable3d",
-  "version": "0.25.3",
+  "version": "0.25.5",
   "description": "3D Framework for Web, Mobile and PC",
   "main": "dist/index.js",
   "scripts": {

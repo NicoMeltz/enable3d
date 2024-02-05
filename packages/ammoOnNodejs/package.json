@@ -1,6 +1,6 @@
 {
   "name": "@enable3d/ammo-on-nodejs",
-  "version": "0.25.3",
+  "version": "0.25.5",
   "description": "Runs ammo.js on your node.js server",
   "main": "dist/index.js",
   "scripts": {

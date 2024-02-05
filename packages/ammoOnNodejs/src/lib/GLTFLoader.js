@@ -2031,6 +2031,20 @@ class GLTFParser {
       return Promise.resolve(this.extensions[EXTENSIONS.KHR_BINARY_GLTF].body)
     }
 
+    // Data URI
+    if (/^data:.*,.*$/i.test(bufferDef.uri)) {
+      return new Promise(function (resolve, reject) {
+        try {
+          const uri = bufferDef.uri.replace('data:application/octet-stream;base64,', '')
+          var buf = Buffer.from(uri, 'base64') // Ta-da
+          console.log('buf', buf)
+          resolve(buf)
+        } catch (e) {
+          reject(e)
+        }
+      })
+    }
+
     const options = this.options
 
     return new Promise(function (resolve, reject) {
